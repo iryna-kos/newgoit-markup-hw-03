@@ -5,51 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="page-header">
-        <div>
-         <nav>
+        <div class="container">
+         <nav class="navigations">
             <a class="logo" href="/">
                 <span class="logo-one">Web</span><span class="logo-two">Studio</span>
             </a>
             <ul class="site-naw list">
-                <li><a class="link" href="#"> 
+                <li class="site-nav-item"><a class="link" href="#"> 
                 <span class="studio">Студія</span></a></li>
-                <li><a class="link" href="./portfolio.html"> Портфоліо</a></li>
-                <li><a class="link" href="">Контакти</a></li>
+                <li class="site-nav-item"><a class="link" href="./portfolio.html"> Портфоліо</a></li>
+                <li class="site-nav-item"><a class="link" href="">Контакти</a></li>
             </ul>
           </nav>
             <ul class="contacts list">
-              <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li><a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div> 
     </header>
    <main>
     <!--Hero-->
     <section class="hero">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button">Замовити послугу</button>
+     <div class="container">
+       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+       <button class="hero-button">Замовити послугу</button>
+     </div>
         </section>
         <!--Benefits-->
-    <section>
-         <div>
-            <ul class="list">
-               <li><h4>
+    <section class="page-benefits">
+         <div class="container">
+            <ul class="benefits list">
+               <li class="preference-item">
                 <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                   <p class="benefits-title-list">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                </li>
-               <li><h4>
+               <li class="preference-item">
                 <h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
                   <p class="benefits-title-list">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                </li>
-               <li><h4>
+               <li class="preference-item">
                 <h3 class="benefits-title">ПЛАНУВАННЯ</h3>
                   <p class="benefits-title-list">Так само консультація з широким активом значною мірою зумовлює.</p>
                </li>
-               <li><h4>
+               <li class="preference-item">
                   <h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                   <p class="benefits-title-list">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                </li>
@@ -57,10 +60,10 @@
          </div>    
     </section>
     <!--About us-->
-    <section>
-        <div>
+    <section class="about-us">
+        <div class="container">
             <h2 class="section-title">Чим ми займаємося</h2>
-            <ul class="list">
+            <ul class="occupation list">
                 <li><img src="./images/about-us/about-us-1.jpg" alt="написання коду" width="370" height="294"> </li>
                 <li><img src="./images/about-us/abot-us-2.jpg" alt="смартфон і ноутбук" width="370" height="294"> </li>
                 <li><img src="./images/about-us/about-us-3.jpg" alt="планшет" width="370" height="294"> </li>
@@ -69,43 +72,45 @@
     </section>
     <!--Our team-->
     <section class="our-team">
+    <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
+        <ul class="team list">
             <li class="team-item">
                 <img src="./images/team/team-img1.jpg" alt="дизайнер" width="270" height="260">
-                <div>
+                <div class="name-item">
                     <h3 class="team-name">Ігор Дем'яненко</h3>
                     <p class="team-profession">Product Designer</p>
                 </div>
             </li>
             <li class="team-item">
                 <img src="./images/team/team-img2.jpg" alt="розробник" width="270" height="260">
-                <div>
+                <div class="name-item">
                     <h3 class="team-name">Ольга Рєпіна</h3>
                     <p class="team-profession">Frontend Developer</p>
                 </div>
             </li>
             <li class="team-item">
                 <img src="./images/team/team-img3.jpg" alt="розробник" width="270" height="260">
-                <div>
+                <div class="name-item">
                     <h3 class="team-name">Микола Тарасов</h3>
                     <p class="team-profession">Marketing</p>
                 </div>
             </li>
             <li class="team-item">
                 <img src="./images/team/team-img4.jpg" alt="розробник" width="270" height="260">
-                <div>
+                <div class="name-item">
                     <h3 class="team-name">Михайло Єрмаков</h3>
                     <p class="team-profession">UI Designer</p>
                 </div>
             </li>
         </ul>
+    </div>
     </section>
    </main>
    <footer class="contact">
-    <div>
+    <div class="container">
         <a class="logo" href="">  <span class="logo-one">Web</span><span class="logo-two-footer">Studio</span> </a>
-        <address>
+        <address class="address">
             <ul class="contact-footer-list list">
               <li class="contact-footer-item">
                 <a class="contact-adress" href="https://www.google.com/maps/d/viewer?mid=1e3wCGSf0WLV-87OjVt8506W0S_s&hl=en&ll=50.42737900000001%2C30.538204999999994&z=17" target="_blank"> м. Київ, пр-т Лесі Українки, 26</a>
@@ -122,4 +127,7 @@
    </footer> 
 </body>
 </html>
+
+
+
 
